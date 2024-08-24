@@ -1,0 +1,42 @@
+﻿@* <--!Strong View--> *@
+@model Instructor
+
+<div class="card" style="width: 18rem;">
+    <img src="/Img/@Model.Img" class="card-img-top" alt="Profile Picture">
+    <div class="card-body">
+        <h5 class="card-title">@Model.Name</h5>
+        <p class="card-text">
+            <strong>Eng:</strong> @Model.Name <br>
+            <strong>Department:</strong> @ViewBag.DeptName <br>
+            <strong>Address:</strong> @Model.Address
+        </p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Course Name</th>
+                    <th scope="col">Course Cost</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>@ViewBag.CourseName</td>
+                    <td>@Model.Salary</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<style>
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .card {
+        flex: 1 1 18rem;
+    }
+</style>
+

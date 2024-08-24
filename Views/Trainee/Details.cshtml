@@ -1,0 +1,70 @@
+﻿@model ITI_MVC_Assingment_D2.Models.TraineeDetailsModelView
+
+
+<div class="card-container">
+  <div class="card" style="width: 18rem;">
+            <img src="/Img/@Model.Img" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">@Model.Name</h5>
+            </div>
+        </div>
+    
+</div>
+
+<style>
+    .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .card {
+        flex: 1 1 18rem;
+    }
+</style>
+
+<div>
+    <h4>TraineeDetailsModelView</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Address)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Address)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Gread)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Gread)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Department)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Department)
+        </dd>
+        </dd>
+    </dl>
+</div>
+
+<table border="1" style="width: 100%; border-collapse: collapse;">
+    <thead>
+        <tr>
+            <th>Course Name</th>
+            <th>Degree</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var course in Model.CoursesDegree)
+        {            
+            <tr>
+                <td style="color:@course.Value.Value">@course.Key </td>
+                <td style="color:@course.Value.Value">@course.Value.Key</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ITI MVC Assingment_D2", "ITI MVC Assingment_D2.csproj", "{F75C76E9-67F6-4A8D-8FC8-8EFC91786E67}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F75C76E9-67F6-4A8D-8FC8-8EFC91786E67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F75C76E9-67F6-4A8D-8FC8-8EFC91786E67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F75C76E9-67F6-4A8D-8FC8-8EFC91786E67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F75C76E9-67F6-4A8D-8FC8-8EFC91786E67}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3B0B710D-81D3-4D9E-B03D-27DC53402DF6}
+	EndGlobalSection
+EndGlobal
